@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="RoseWater">#D8A7B1</color>
+    <color name="Spearmint">#B6E2D3</color>
+    <color name="Cream">#FAE8E0</color>
+    <color name="HotPink">#EF7C8E</color>
+    <color name="Grey">#d3d3d3</color>
+</resources>
