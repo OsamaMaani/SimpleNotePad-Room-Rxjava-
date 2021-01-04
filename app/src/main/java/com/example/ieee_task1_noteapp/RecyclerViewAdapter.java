@@ -8,17 +8,14 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 import java.util.List;
 
 
 class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
-    private List<DataModel> list;
-    private Context mContext;
+    private List<DataModel> list = new ArrayList<>();
 
-    public RecyclerViewAdapter(List<DataModel> list, Context mContext){
-        this.list = list;
-        this.mContext = mContext;
-    }
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -35,6 +32,11 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyVie
     @Override
     public int getItemCount() {
         return list.size();
+    }
+
+    public void setList(List<DataModel> list){
+        this.list = list;
+        notifyDataSetChanged();
     }
 
     public class MyViewHolder extends  RecyclerView.ViewHolder{
